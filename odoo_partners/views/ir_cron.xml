@@ -1,0 +1,13 @@
+<odoo>
+  <data>
+    <record id="update_weather" model="ir.cron">
+      <field name="name">Update Partners List</field>
+      <field name="interval_number">30</field>
+      <field name="interval_type">days</field>
+      <field name="numbercall">-1</field>
+      <field name="doall" eval="False"/>
+      <field name="model_id" ref="model_res_partner"/>
+      <field name="code">model.update_partners_list()</field>
+    </record>
+  </data>
+</odoo>
