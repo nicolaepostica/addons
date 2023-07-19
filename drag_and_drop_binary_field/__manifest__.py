@@ -16,7 +16,10 @@
         Binary Field Widget in their Odoo projects.
         """,
     'license': 'OPL-1',
+    'price': 0,
+    'currency': 'EUR',
     'author': "Nicolae Postica",
+    'support': 'nicolae.postica2@gmail.com',
     'website': "https://github.com/nicolaepostica",
     'images': [
         'static/description/icon.png',

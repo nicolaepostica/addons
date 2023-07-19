@@ -6,6 +6,8 @@
     'description': """ Get official odoo partners from https://odoo.com/partners,
     update data every month""",
     'author': "Anonymous",
+    'price': 300,
+    'currency': 'EUR',
     'support': 'support@gmail.com',
     'license': 'LGPL-3',
     'website': "http://www.yourcompany.com",
