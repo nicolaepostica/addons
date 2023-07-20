@@ -8,10 +8,10 @@ odoo.define('drag_and_drop_binary_field.drag_and_drop_widget', function (require
     var FieldBinaryFileDragAndDrop = FieldBinaryFile.extend({
         start: function () {
             this._super.apply(this, arguments)
-            this.$el.on("drop.widget_events", this.proxy("_onDropDown"))
-            this.$el.on("dragenter.widget_events", this.proxy("_disableDefaultDragEvents"))
-            this.$el.on("dragover.widget_events", this.proxy("_disableDefaultDragEvents"))
-            this.$el.on("dragleave.widget_events", this.proxy("_disableDefaultDragEvents"))
+            this.$el.on("drop", this.proxy("_onDropDown"))
+            this.$el.on("dragenter", this.proxy("_disableDefaultDragEvents"))
+            this.$el.on("dragover", this.proxy("_disableDefaultDragEvents"))
+            this.$el.on("dragleave", this.proxy("_disableDefaultDragEvents"))
         },
 
         _onDropDown: function (e) {
