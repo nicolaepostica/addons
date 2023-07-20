@@ -26,12 +26,9 @@
     ],
     'category': 'Tools',
     'depends': ['base_setup'],
-    'data': [],
-    'assets': {
-        'web.assets_backend': [
-            'drag_and_drop_binary_field/static/src/js/field_binary.js',
-        ],
-    },
+    'data': [
+        'views/assets.xml',
+    ],
     "post_load": None,
     "pre_init_hook": None,
     "post_init_hook": None,

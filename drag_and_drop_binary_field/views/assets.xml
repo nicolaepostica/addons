@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 2023 Nicolae Postica <nicolae.postica2@gmail.com>-->
+<odoo>
+    <template id="drag_and_drop_binary_field_assets" inherit_id="web.assets_backend" name="Drop And Drop Assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/drag_and_drop_binary_field/static/src/js/field_binary.js"/>
+        </xpath>
+    </template>
+</odoo>
