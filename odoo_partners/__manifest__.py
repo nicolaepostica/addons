@@ -12,7 +12,7 @@
     'license': 'LGPL-3',
     'website': "http://www.yourcompany.com",
     'category': 'Automation',
-    'version': '1.0',
+    'version': '16.0.0.1',
     'external_dependencies': {
         'python': ['beautifulsoup4'],
     },
