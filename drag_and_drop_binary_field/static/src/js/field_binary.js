@@ -13,7 +13,6 @@ export class FieldBinaryFileDragAndDrop extends BinaryField {
             this.el.addEventListener("dragenter", this._disableDefaultDragEvents)
             this.el.addEventListener("dragover", this._disableDefaultDragEvents)
             this.el.addEventListener("dragleave", this._disableDefaultDragEvents)
-            this.input = this.el.querySelector('.o_input_file')
         })
     }
 
@@ -27,8 +26,7 @@ export class FieldBinaryFileDragAndDrop extends BinaryField {
                     this.uploadData(file)
                 }
             })
-        }
-        else {
+        } else {
             [...ev.dataTransfer.files].forEach((file, i) => {
                 this.uploadData(file)
             })
@@ -38,9 +36,10 @@ export class FieldBinaryFileDragAndDrop extends BinaryField {
     uploadData(file) {
         const customFileList = new DataTransfer()
         customFileList.items.add(file)
-        this.input.files = customFileList.files
+        const input = this.el.querySelector('.o_input_file')
+        input.files = customFileList.files
         const event = new Event('change')
-        this.input.dispatchEvent(event)
+        input.dispatchEvent(event)
     }
 
 
