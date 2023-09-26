@@ -2,7 +2,7 @@
 # Copyright 2023 Nicolae Postica <nicolae.postica2@gmail.com>
 {
     'name': "Drag And Drop Binary Field Widget",
-    'version': '15.0.0.2',
+    'version': '15.0.1.0',
     "summary": """  
         The Drag and Drop Binary Field Widget for Odoo is a custom widget that enhances the user experience when 
         dealing with binary fields. 
@@ -30,6 +30,7 @@
     'assets': {
         'web.assets_backend': [
             'drag_and_drop_binary_field/static/src/js/field_binary.js',
+            'drag_and_drop_binary_field/static/src/js/field_image.js',
         ],
     },
     "post_load": None,
