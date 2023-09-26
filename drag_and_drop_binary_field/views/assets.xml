@@ -4,6 +4,7 @@
     <template id="drag_and_drop_binary_field_assets" inherit_id="web.assets_backend" name="Drop And Drop Assets">
         <xpath expr="." position="inside">
             <script type="text/javascript" src="/drag_and_drop_binary_field/static/src/js/field_binary.js"/>
+            <script type="text/javascript" src="/drag_and_drop_binary_field/static/src/js/field_image.js"/>
         </xpath>
     </template>
 </odoo>
