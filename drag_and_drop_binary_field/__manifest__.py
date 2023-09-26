@@ -30,6 +30,7 @@
     'assets': {
         'web.assets_backend': [
             'drag_and_drop_binary_field/static/src/js/field_binary.js',
+            'drag_and_drop_binary_field/static/src/js/field_image.js',
         ],
     },
     "post_load": None,
