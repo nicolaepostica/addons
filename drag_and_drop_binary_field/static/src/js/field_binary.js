@@ -1,7 +1,7 @@
 /** @odoo-module **/
 // Copyright 2023 Nicolae Postica <nicolae.postica2@gmail.com>
 import {registry} from "@web/core/registry"
-import {BinaryField} from "@web/views/fields/binary/binary_field"
+import {BinaryField, binaryField} from "@web/views/fields/binary/binary_field"
 import {onMounted} from "@odoo/owl"
 
 export class FieldBinaryFileDragAndDrop extends BinaryField {
@@ -48,4 +48,9 @@ export class FieldBinaryFileDragAndDrop extends BinaryField {
     }
 }
 
-registry.category('fields').add("drag_and_drop", FieldBinaryFileDragAndDrop)
+export const fieldBinaryFileDragAndDrop = {
+    ...binaryField,
+    component: FieldBinaryFileDragAndDrop,
+}
+
+registry.category('fields').add("drag_and_drop", fieldBinaryFileDragAndDrop)

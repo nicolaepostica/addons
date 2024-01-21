@@ -1,7 +1,7 @@
 /** @odoo-module **/
 // Copyright 2023 Nicolae Postica <nicolae.postica2@gmail.com>
 import {registry} from "@web/core/registry"
-import {ImageField} from "@web/views/fields/image/image_field"
+import {ImageField, imageField} from "@web/views/fields/image/image_field"
 import {onMounted} from "@odoo/owl"
 
 export class FieldImageDragAndDrop extends ImageField {
@@ -48,4 +48,9 @@ export class FieldImageDragAndDrop extends ImageField {
     }
 }
 
-registry.category('fields').add("drag_and_drop_image", FieldImageDragAndDrop)
+export const fieldImageDragAndDrop = {
+    ...imageField,
+    component: FieldImageDragAndDrop,
+}
+
+registry.category('fields').add("drag_and_drop_image", fieldImageDragAndDrop)
